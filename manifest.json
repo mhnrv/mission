@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Synack TCopy",
+  "version": "0.1",
+
+  "description": "An extension to copy token from session storage",
+
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://platform.synack.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Click to copy the token"
+  }
+}
+
